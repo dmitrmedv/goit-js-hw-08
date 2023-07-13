@@ -7,7 +7,7 @@ const textareaRef = document.querySelector('textarea');
 formRef.addEventListener('input', throttle(formRefOnClick, 500));
 formRef.addEventListener('submit', formRefOnSubmit);
 
-dataObj = {};
+const dataObj = {};
 
 function formRefOnClick({ target: { name, value } }) {
   dataObj[name] = value;
